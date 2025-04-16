@@ -44,11 +44,11 @@ public class Calculadora {
 
     private static void ejecutarOperacion(int operacion, Scanner consola) {
         System.out.println("Proporciona el primer operando: ");
-        var operando1 = Integer.parseInt(consola.nextLine());
+        var operando1 = Double.parseDouble(consola.nextLine());
         System.out.println("Proporciona el segundo operando: ");
-        var operando2 = Integer.parseInt(consola.nextLine());
+        var operando2 = Double.parseDouble(consola.nextLine());
 
-        int resultado;
+        double resultado;
         switch (operacion) {
             case 1 -> {
                 resultado = operando1 + operando2;
